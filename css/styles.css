@@ -1,0 +1,33 @@
+/* Main styles */
+	*{font-family: 'Open Sans', sans-serif;}
+
+/* Header */
+	.navbar{border-radius: 0px; }
+	.navbar-brand{
+		width: 175px; 
+		height: 45px; 
+		padding: 0px; 
+		background-size: cover; 
+		background-image: url(../img/brand.png);
+		background-position: center;
+	}
+
+/* Jumbotron */
+.jumbotron, .jumbotron-w-image{
+	background-color: rgb(20, 20, 20); 
+	border-radius: 0px; 
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: cover;
+}
+	.jumbotron-w-image .jumbotron{
+		border-radius: 0px; 
+		background-color: rgba(0, 0, 0, 0.5);
+		background-attachment: fixed;
+		background-position: center; 
+		background-size: cover;
+	}
+	.jumbotron .alert-warning{opacity: 0.75; transition: 0.5s;}
+	.jumbotron .alert-warning:hover{opacity: 1;} 
+
+.hidden{display: none;}

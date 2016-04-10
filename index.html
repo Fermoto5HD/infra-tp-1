@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="theme-color" content="rgb(75, 75, 75)" />
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Infraestructura - Trabajo Práctico N°1</title>
+		<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body class="bg-inverse">
+		<div class="modal fade" id="about" tabindex="-1" role="dialog">
+			<div class="modal-dialog " role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-inverse">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Acerca del sitio</h4>
+					</div>
+					<div class="modal-body bg-inverse">
+						<p>Este sitio fue programado en base a los cálculos para obtener diferentes datos en el trabajo práctico, procesando los datos y brindar la información necesaria en forma sencilla y rápida. </p>
+						<hr>
+						<h5>Código abierto</h5>
+						<p>El código del proyecto está disponible en GitHub. </p>
+						<a href="http://github.com/Fermoto5HD/infra-tp-1" class="btn btn-primary" target="_blank">Ir al repositorio</a>
+						<hr>
+						<h5>Recursos utilizados</h5>
+						<ul class="list-group">
+							<li class="list-group-item bg-inverse">
+								<span class="label label-default label-pill pull-xs-right">v2.2.1</span>
+								jQuery
+							</li>
+							<li class="list-group-item bg-inverse">
+								<span class="label label-default label-pill pull-xs-right">v4.0.0-alpha2</span>
+								Bootstrap
+							</li>
+							<li class="list-group-item bg-inverse">
+								<span class="label label-default label-pill pull-xs-right">v1.2.0</span>
+								Tether
+							</li>
+						</ul>
+						<br/>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+			<div class="container">
+				<button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#menuresponsive">Menú &#9776;</button>
+				<a class="navbar-brand" href="#home" title="Fernando Javier Osorio Lorenzo"></a>
+				<div class="collapse navbar-toggleable-xs" id="menuresponsive">
+					<ul class="nav navbar-nav pull-xs-right">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Inicio <!--<span class="sr-only">(actual)</span>--></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">Acerca de</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main id="sectionpage" class="bg-inverse">
+			<div class="jumbotron-w-image bg-inverse" style="background-image: url(img/jumbotron.jpg);">
+				<div class="jumbotron">
+					<div class="container">
+						<h1>Infraestructura - Trabajo Práctico N°1</h1>
+						<p>Acá podrás obtener los resultados y ecuaciónes del primer trabajo práctico de Infraestructura.</p>
+						<p>Desde el peso de todas las barras de riel, pasando por los durmientes, balasto hasta las eclisas y tirafondos. </p>
+						<p>Basado en los apuntes y normativas de CNRT y Ferrocarriles Argentinos S.E.</p>
+					</div>
+				</div>
+			</div>
+			<form class="container">
+				<h1>Ingresá los datos.</h1>
+				<p>Después de seleccionar e ingresar todos los datos se activará el botón para mostrar los resultados. </p>
+				<div class="row text-sm-center">
+					<fieldset class="form-group">
+						<label for="trocha">Trocha</label>
+						<select class="form-control" id="trocha">
+							<option hidden>Seleccionar trocha</option>
+							<option value="Ancha">Ancha</option>
+							<option value="Media">Media</option>
+							<option value="Angosta">Angosta</option>
+						</select>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<label for="balasto">Balasto</label>
+						<div class="form-inline">
+							<div class="form-group">
+								<label for="balasto-tipo">Tipo</label>
+								<input type="text" class="form-control" id="balasto-tipo" value="Piedra granel partida" disabled>
+								</div>
+							<div class="form-group">
+								<label for="balasto-pesoespecifico">Peso específico (en ton/m³)</label>
+								<input type="number" step="any" class="form-control" id="balasto-pesoespecifico" value="1.6" disabled>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<label for="balasto">Durmientes</label>
+						<div class="form-inline">
+							<div class="form-group">
+								<label for="durmiente-tipo">Tipo</label>
+								<input type="text" class="form-control" id="durmiente-tipo" value="Madera de quebracho colorado" disabled>
+							</div>
+							<div class="form-group">
+								<label for="durmiente-alto">Alto (en mts)</label>
+								<input type="number" step="any" class="form-control" id="durmiente-alto" value="0.12" disabled>
+							</div>
+							<div class="form-group">
+								<label for="durmiente-ancho">Ancho (en mts)</label>
+								<input type="number" step="any" class="form-control" id="durmiente-ancho" value="0.24" disabled>
+							</div>
+						</div>
+						<div class="form-inline">
+							<div class="form-group">
+								<label for="durmiente-cantporkmvia">Cantidad de durmientes por km de vía</label>
+								<input type="number" class="form-control" id="durmiente-cantporkmvia" required>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<label for="riel-tipo">Tipo de riel</label>
+						<select class="form-control" id="riel-tipo">
+							<option hidden>Seleccionar</option>
+							<option value="100BS">100BS</option>
+							<option value="U50">U50</option>
+							<option value="UIC54">UIC54</option>
+							<option value="UIC60">UIC60</option>
+						</select>
+						<div class="form-inline">
+							<div class="form-group" title="Este dato se completa al seleccionar el tipo de riel" data-toggle="tooltip" data-placement="top">
+								<label for="riel-peso">Peso (en kg/m)</label>
+								<input type="number" step="any" class="form-control" id="riel-peso" placeholder="desc." disabled required>
+							</div>
+							<div class="form-group">
+								<label for="riel-largobarra">Largo por barra (en m)</label>
+								<input type="number" step="any" class="form-control" id="riel-largobarra" required>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<label for="eclisas">Eclisas</label>
+						<div class="form-inline">
+							<div class="form-group">
+								<label for="eclisas-tipo">Tipo</label>
+								<input type="text" class="form-control" id="eclisas-tipo" placeholder="desc." disabled value="Barra">
+							</div>
+							<div class="form-group">
+								<label for="eclisas-agujeros">Agujeros</label>
+								<select class="form-control" id="eclisas-agujeros">
+									<option hidden>Seleccionar</option>
+									<option value="4">4</option>
+									<option value="6">6</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<div class="form-inline">
+							<label for="fijaciones-tipo">Fijaciones</label>
+							<input type="text" class="form-control" id="fijaciones-tipo" disabled value="Directa con tirafondos">
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<div class="form-inline">
+							<label for="longitud-via">Longitud de la vía a construir (en km)</label>
+							<input type="number" step="any" class="form-control" id="longitud-via" required>
+						</div>
+					</fieldset>
+				</div>
+				<button type="submit" class="btn btn-primary" id="resultados" disabled>Mostrar resultados</button>
+				<div class="btn btn-primary hidden" id="calculos" onClick="mostrarcalculos(true)" disabled>Mostrar cálculos</div>
+				<div class="container hidden" id="cuadro-resultados">
+					<hr>
+					<h1>Resultados obtenidos:</h1>
+					<label><strong>Peso por barra: </strong><span class="calculo hidden" id="calculo-pesobarra"></span><span id="resultado-pesobarra"></span>kg.</label>
+					<hr>
+					<label><strong>Cantidad de durmientes totales: </strong><span class="calculo hidden" id="calculo-durmientestotales"></span><span id="resultado-durmientestotales"></span> unidades.</label>
+					<hr>
+					<label><strong>¿Cuánto ocupa el durmiente?: </strong><span class="calculo hidden" id="calculo-ocupaciondurmiente"></span><span id="resultado-ocupaciondurmiente"></span>m³.</label>
+					<hr>
+					<label><strong>Área de todos los <span id="resultado-durmientestotales"></span> durmientes: </strong><span class="calculo hidden" id="calculo-ocupaciondurmientetodos"></span><span id="resultado-ocupaciondurmientetodos"></span>m³.</label>
+					<hr>
+					<label><strong>Cantidad de balasto a utilizar: </strong><span id="resultado-balasto"></span>tns.</label>
+					<span class="calculo hidden" id="calculo-balasto"></span>
+					<hr>
+					<label><strong>Tirafondos a utilizar: </strong><span class="calculo hidden" id="calculo-tirafondos"></span><span id="resultado-tirafondos"></span> unidades.</label>
+					<hr>
+					<label><strong>Barras de rieles a utilizar: </strong><span class="calculo hidden" id="calculo-rielesbarras"></span><span id="resultado-rielesbarras"></span> unidades.</label>
+					<hr>
+					<label><strong>Peso de todas las <span id="resultado-rielesbarras"></span> barras: </strong><span class="calculo hidden" id="calculo-rielespeso"></span><span id="resultado-rielespeso"></span> tns.</label>
+					<hr>
+					<label><strong>Eclisas a utilizar: </strong><span class="calculo hidden" id="calculo-eclisas"></span><span id="resultado-eclisas"></span> unidades.</label>
+					<hr>
+					<label><strong>Arandelas y bulones a utilizar: </strong><span class="calculo hidden" id="calculo-arandelasbulones"></span><span id="resultado-arandelasbulones"></span> unidades cada una.</label>
+				</div>
+			</form>
+		</main>
+		<hr>
+		<footer>
+			<div class="container">
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> El <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type" target="_blank">Trabajo Práctico N°1 de Infraestructura 1</span>, realizado y mantenido por <a xmlns:cc="http://creativecommons.org/ns#" href="http://Fermoto5HD.16mb.com/" property="cc:attributionName" rel="cc:attributionURL" target="_blank">Fernando Osorio</a>, está licenciado bajo <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Atribución 4.0 Internacional</a>. Parte de este trabajo está basado en los apuntes respectivos de la materia dictada en la Universidad de San Martín y también en las normativas respectivas de la CNRT y de Ferrocarriles Argentinos S.E. | <span>2016</span>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="js/vendor/tether.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
