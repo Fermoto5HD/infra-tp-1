@@ -5,6 +5,9 @@ Si tenés más datos o ítems para calcular podés sugerirlas mediante un issue 
 
 ## Changelog
 
+### v1.0.1
+* Corrección de errores en los cálculos. 
+
 ### v1.0
 * Carga inicial.
 
