@@ -1,0 +1,22 @@
+{
+  "name": "infra-tp-1",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Fermoto5HD/infra-tp-1",
+  "authors": [
+    "Fermoto5HD <Fermoto5HD@outlook.com>"
+  ],
+  "description": "Primer trabajo práctico de Infraestructura 1.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "bootstrap": "4.0.0-alpha.2",
+    "tether": "^1.2.2"
+  }
+}

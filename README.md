@@ -5,6 +5,15 @@ Si tenés más datos o ítems para calcular podés sugerirlas mediante un issue 
 
 ## Changelog
 
+### v1.0.3
+* Dependencias via Bower. 
+* Soporte de Grunt. 
+* Remoción de frameworks no utilizados. 
+
+### v1.0.2
+* Corrección del cálculo de bulones, tuercas y arandelas. 
+* Se deja el acceso al "Acerca de", no tiene sentido una opción a "Inicio" siendo una Single Page App. 
+
 ### v1.0.1
 * Corrección de errores en los cálculos. 
 
@@ -12,7 +21,7 @@ Si tenés más datos o ítems para calcular podés sugerirlas mediante un issue 
 * Carga inicial.
 
 ## Frameworks utilizados
-* jQuery v2.2.1
+* jQuery v2.2.3
 * Bootstrap v4.0.0-alpha2
 * Tether v1.2.0
 

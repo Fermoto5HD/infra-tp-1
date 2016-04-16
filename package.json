@@ -1,0 +1,21 @@
+{
+  "name": "infra-tp-1",
+  "version": "1.0.0",
+  "description": "Primer trabajo práctico de Infraestructura 1.",
+  "main": "sitio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fermoto5HD/infra-tp-1.git"
+  },
+  "author": "Fernando Osorio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fermoto5HD/infra-tp-1/issues"
+  },
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0"
+  }
+}

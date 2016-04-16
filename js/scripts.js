@@ -204,8 +204,8 @@ $(document)
 				$('#calculo-eclisas').text("((" + longitudvia.metros + "m x 2)/" +riel.largobarra + "m) x 2 = "); 
 				$('#resultado-eclisas').text(resultado.eclisas); 
 			// Arandelas y bulones 
-				resultado.arandelasbulones = resultado.eclisas*agujeroseclisas*2; 
-				$('#calculo-arandelasbulones').text(resultado.eclisas + " unidades x " + agujeroseclisas + " agujeros x 2 = "); 
+				resultado.arandelasbulones = resultado.eclisas*agujeroseclisas; 
+				$('#calculo-arandelasbulones').text(resultado.eclisas + " unidades x " + agujeroseclisas + " agujeros = "); 
 				$('#resultado-arandelasbulones').text(resultado.arandelasbulones); 
 			console.log(resultado.ocupacionbalastotrapecio); 
 			console.log(resultado.balasto); 

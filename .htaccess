@@ -4,7 +4,7 @@ ErrorDocument 500 /500.html
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE yZuZaz:ERRORPAGEID
 
 # htaccess custom error pages
-ErrorDocument 404 /webmedia/404.html
+ErrorDocument 404 /404.html
 
 # SET INDEX OPTIONS
 IndexOptions IgnoreCase FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble
