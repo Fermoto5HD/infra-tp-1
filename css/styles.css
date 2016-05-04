@@ -8,9 +8,13 @@
 		height: 45px; 
 		padding: 0px; 
 		background-size: cover; 
-		background-image: url(../img/brand.png);
+		background-image: url(../img/brand.svg);
 		background-position: center;
 	}
+
+/* Breadcrumb */
+	.breadcrumb-container {background-color: rgba(0, 0, 0, 0.75);} 
+	.breadcrumb {background-color: transparent; margin: 0px; border-radius: 0px;}
 
 /* Jumbotron */
 .jumbotron, .jumbotron-w-image{

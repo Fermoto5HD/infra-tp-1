@@ -5,6 +5,12 @@ Si tenés más datos o ítems para calcular podés sugerirlas mediante un issue 
 
 ## Changelog
 
+### v1.1 
+* Actualización del brand logo. 
+* Incorporación de un breadcrumb de referencia. 
+* Mejoras estéticas en el form. 
+* Remoción de la clase "hidden". 
+
 ### v1.0.3
 * Dependencias via Bower. 
 * Soporte de Grunt. 

@@ -24,10 +24,10 @@ var resultado = [
 
 var mostrarcalculos = function(valor) {
 	if (valor) {
-		$('.calculo').removeClass('hidden'); 
+		$('.calculo').prop('hidden', ''); 
 		$('.btn.btn-primary#calculos').attr('onClick', 'mostrarcalculos(false)').text('Ocultar cálculos'); 
 	} else {
-		$('.calculo').addClass('hidden'); 
+		$('.calculo').prop('hidden', 'true'); 
 		$('.btn.btn-primary#calculos').attr('onClick', 'mostrarcalculos(true)').text('Mostrar cálculos'); 
 	}
 }
@@ -132,8 +132,8 @@ $(document)
 	})
 	.on("submit", function(ev) {
 		ev.preventDefault();
-		$('.btn.btn-primary#calculos').removeClass('hidden').prop('disabled', ''); 
-		$('.container#cuadro-resultados').removeClass('hidden'); 
+		$('.btn.btn-primary#calculos').prop('hidden', '').prop('disabled', ''); 
+		$('.container#cuadro-resultados').prop('hidden', ''); 
 		// Paso de los valores en campos a variables. 
 			// Seccion riel
 				riel.tipo = $('select#riel-tipo').val(); 

@@ -66,6 +66,16 @@
 		</nav>
 		<main id="sectionpage" class="bg-inverse">
 			<div class="jumbotron-w-image bg-inverse" style="background-image: url(img/jumbotron.jpg);">
+				<div class="breadcrumb-container">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><a href="../../..">Home</a></li>
+							<li><a href="../..">Portfolio</a></li>
+							<li><a href="..">Trabajos Prácticos 2016</a></li>
+							<li class="active">Infraestructura - T.P. N°1</li>
+						</ol>
+					</div>
+				</div>
 				<div class="jumbotron">
 					<div class="container">
 						<h1>Infraestructura - Trabajo Práctico N°1</h1>
@@ -80,131 +90,170 @@
 				<p>Después de seleccionar e ingresar todos los datos se activará el botón para mostrar los resultados. </p>
 				<div class="row text-sm-center">
 					<fieldset class="form-group">
-						<label for="trocha">Trocha</label>
-						<select class="form-control" id="trocha">
-							<option hidden>Seleccionar trocha</option>
-							<option value="Ancha">Ancha</option>
-							<option value="Media">Media</option>
-							<option value="Angosta">Angosta</option>
-						</select>
+						<h3>Trocha</h3>
+						<div class="input-group">
+							<span class="input-group-addon" for="trocha">Tipo</span>
+							<select class="form-control" id="trocha">
+								<option hidden>Seleccioná una</option>
+								<option value="Ancha">Ancha</option>
+								<option value="Media">Media</option>
+								<option value="Angosta">Angosta</option>
+							</select>
+						</div>
 					</fieldset>
 					<hr>
 					<fieldset class="form-group">
-						<label for="balasto">Balasto</label>
+						<h3>Balasto</h3>
 						<div class="form-inline">
 							<div class="form-group">
-								<label for="balasto-tipo">Tipo</label>
-								<input type="text" class="form-control" id="balasto-tipo" value="Piedra granel partida" disabled>
+								<div class="input-group">
+									<span class="input-group-addon" for="balasto-tipo">Tipo</span>
+									<input type="text" class="form-control" id="balasto-tipo" value="Piedra granel partida" disabled>
 								</div>
+							</div>
 							<div class="form-group">
-								<label for="balasto-pesoespecifico">Peso específico (en ton/m³)</label>
-								<input type="number" step="any" class="form-control" id="balasto-pesoespecifico" value="1.6" disabled>
+								<div class="input-group">
+									<span class="input-group-addon" for="balasto-pesoespecifico">Peso específico</span>
+									<input type="number" step="any" class="form-control" id="balasto-pesoespecifico" value="1.6" disabled>
+									<span class="input-group-addon">ton/m³</span>
+								</div>
 							</div>
 						</div>
 					</fieldset>
 					<hr>
 					<fieldset class="form-group">
-						<label for="balasto">Durmientes</label>
+						<h3>Durmientes</h3>
 						<div class="form-inline">
 							<div class="form-group">
-								<label for="durmiente-tipo">Tipo</label>
-								<input type="text" class="form-control" id="durmiente-tipo" value="Madera de quebracho colorado" disabled>
-							</div>
-							<div class="form-group">
-								<label for="durmiente-alto">Alto (en mts)</label>
-								<input type="number" step="any" class="form-control" id="durmiente-alto" value="0.12" disabled>
-							</div>
-							<div class="form-group">
-								<label for="durmiente-ancho">Ancho (en mts)</label>
-								<input type="number" step="any" class="form-control" id="durmiente-ancho" value="0.24" disabled>
+								<div class="input-group">
+									<span class="input-group-addon" for="durmiente-tipo">Tipo</span>
+									<input type="text" class="form-control" id="durmiente-tipo" value="Madera de quebracho colorado" disabled>
+								</div>
 							</div>
 						</div>
 						<div class="form-inline">
 							<div class="form-group">
-								<label for="durmiente-cantporkmvia">Cantidad de durmientes por km de vía</label>
-								<input type="number" class="form-control" id="durmiente-cantporkmvia" required>
-							</div>
-						</div>
-					</fieldset>
-					<hr>
-					<fieldset class="form-group">
-						<label for="riel-tipo">Tipo de riel</label>
-						<select class="form-control" id="riel-tipo">
-							<option hidden>Seleccionar</option>
-							<option value="100BS">100BS</option>
-							<option value="U50">U50</option>
-							<option value="UIC54">UIC54</option>
-							<option value="UIC60">UIC60</option>
-						</select>
-						<div class="form-inline">
-							<div class="form-group" title="Este dato se completa al seleccionar el tipo de riel" data-toggle="tooltip" data-placement="top">
-								<label for="riel-peso">Peso (en kg/m)</label>
-								<input type="number" step="any" class="form-control" id="riel-peso" placeholder="desc." disabled required>
+								<div class="input-group">
+									<span class="input-group-addon" for="durmiente-alto">Alto</span>
+									<input type="number" step="any" class="form-control" id="durmiente-alto" value="0.12" disabled>
+									<span class="input-group-addon">m</span>
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="riel-largobarra">Largo por barra (en m)</label>
-								<input type="number" step="any" class="form-control" id="riel-largobarra" required>
+								<div class="input-group">
+									<span class="input-group-addon" for="durmiente-ancho">Ancho</span>
+									<input type="number" step="any" class="form-control" id="durmiente-ancho" value="0.24" disabled>
+									<span class="input-group-addon">m</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon" for="durmiente-cantporkmvia">Por km de vía se usarán</span>
+									<input type="number" class="form-control" id="durmiente-cantporkmvia" required>
+									<span class="input-group-addon">durmientes</span>
+								</div>
 							</div>
 						</div>
 					</fieldset>
 					<hr>
 					<fieldset class="form-group">
-						<label for="eclisas">Eclisas</label>
-						<div class="form-inline">
-							<div class="form-group">
-								<label for="eclisas-tipo">Tipo</label>
-								<input type="text" class="form-control" id="eclisas-tipo" placeholder="desc." disabled value="Barra">
-							</div>
-							<div class="form-group">
-								<label for="eclisas-agujeros">Agujeros</label>
-								<select class="form-control" id="eclisas-agujeros">
+						<h3>Riel</h3>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon" for="riel-tipo">Tipo</span>
+								<select class="form-control" id="riel-tipo">
 									<option hidden>Seleccionar</option>
-									<option value="4">4</option>
-									<option value="6">6</option>
+									<option value="100BS">100BS</option>
+									<option value="U50">U50</option>
+									<option value="UIC54">UIC54</option>
+									<option value="UIC60">UIC60</option>
 								</select>
 							</div>
 						</div>
+						<div class="form-inline">
+							<div class="form-group" title="Este dato se completa al seleccionar el tipo de riel" data-toggle="tooltip" data-placement="top">
+								<div class="input-group">
+									<div class="input-group-addon" for="riel-peso">Peso</div>
+									<input type="number" step="any" class="form-control" id="riel-peso" placeholder="desc." disabled required></input>
+									<div class="input-group-addon">kg/m</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon" for="riel-largobarra">Largo por barra</div>
+									<input type="number" step="any" class="form-control" id="riel-largobarra" required>
+									<div class="input-group-addon">m</div>
+								</div>
+							</div>
+						</div>
 					</fieldset>
 					<hr>
 					<fieldset class="form-group">
+						<h3>Eclisas</h3>
 						<div class="form-inline">
-							<label for="fijaciones-tipo">Fijaciones</label>
-							<input type="text" class="form-control" id="fijaciones-tipo" disabled value="Directa con tirafondos">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon" for="eclisas-tipo">Tipo</span>
+									<input type="text" class="form-control" id="eclisas-tipo" placeholder="desc." disabled value="Barra">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon" for="eclisas-agujeros">Agujeros</span>
+									<select class="form-control" id="eclisas-agujeros">
+										<option hidden>Seleccionar</option>
+										<option value="4">4</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+							</div>
 						</div>
 					</fieldset>
 					<hr>
 					<fieldset class="form-group">
 						<div class="form-inline">
-							<label for="longitud-via">Longitud de la vía a construir (en km)</label>
-							<input type="number" step="any" class="form-control" id="longitud-via" required>
+							<div class="input-group">
+								<span class="input-group-addon" for="fijaciones-tipo">Fijaciones</span>
+								<input type="text" class="form-control" id="fijaciones-tipo" disabled value="Directa con tirafondos">
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon" for="longitud-via">Longitud de la vía a construir</div>
+							<input type="number" step="any" class="form-control" id="longitud-via" required></input>
+							<div class="input-group-addon">km</div>
 						</div>
 					</fieldset>
 				</div>
 				<button type="submit" class="btn btn-primary" id="resultados" disabled>Mostrar resultados</button>
-				<div class="btn btn-primary hidden" id="calculos" onClick="mostrarcalculos(true)" disabled>Mostrar cálculos</div>
-				<div class="container hidden" id="cuadro-resultados">
+				<div class="btn btn-primary" id="calculos" onClick="mostrarcalculos(true)" disabled hidden>Mostrar cálculos</div>
+				<div class="container" id="cuadro-resultados" hidden>
 					<hr>
 					<h1>Resultados obtenidos:</h1>
 					<label><strong>Cantidad total de balasto a utilizar: </strong><span id="resultado-balasto"></span>tns.</label>
-					<span class="calculo hidden" id="calculo-balasto"></span>
+					<span class="calculo" hidden id="calculo-balasto"></span>
 					<hr>
-					<label><strong>Cantidad total de durmientes: </strong><span class="calculo hidden" id="calculo-durmientestotales"></span><span id="resultado-durmientestotales"></span> unidades.</label>
+					<label><strong>Cantidad total de durmientes: </strong><span class="calculo" hidden id="calculo-durmientestotales"></span><span id="resultado-durmientestotales"></span> unidades.</label>
 					<hr>
-					<label><strong>¿Cuánto ocupa el durmiente?: </strong><span class="calculo hidden" id="calculo-ocupaciondurmiente"></span><span id="resultado-ocupaciondurmiente"></span>m³.</label>
+					<label><strong>¿Cuánto ocupa el durmiente?: </strong><span class="calculo" hidden id="calculo-ocupaciondurmiente"></span><span id="resultado-ocupaciondurmiente"></span>m³.</label>
 					<hr>
-					<label><strong>Área de todos los <span id="resultado-durmientestotales"></span> durmientes: </strong><span class="calculo hidden" id="calculo-ocupaciondurmientetodos"></span><span id="resultado-ocupaciondurmientetodos"></span>m³.</label>
+					<label><strong>Área de todos los <span id="resultado-durmientestotales"></span> durmientes: </strong><span class="calculo" hidden id="calculo-ocupaciondurmientetodos"></span><span id="resultado-ocupaciondurmientetodos"></span>m³.</label>
 					<hr>
-					<label><strong>Cantidad total de rieles: </strong><span class="calculo hidden" id="calculo-rielesbarras"></span><span id="resultado-rielesbarras"></span> unidades.</label>
+					<label><strong>Cantidad total de rieles: </strong><span class="calculo" hidden id="calculo-rielesbarras"></span><span id="resultado-rielesbarras"></span> unidades.</label>
 					<hr>
-					<label><strong>Peso por barra: </strong><span class="calculo hidden" id="calculo-pesobarra"></span><span id="resultado-pesobarra"></span>kg.</label>
+					<label><strong>Peso por barra: </strong><span class="calculo" hidden id="calculo-pesobarra"></span><span id="resultado-pesobarra"></span>kg.</label>
 					<hr>
-					<label><strong>Peso de todas las <span id="resultado-rielesbarras"></span> barras: </strong><span class="calculo hidden" id="calculo-rielespeso"></span><span id="resultado-rielespeso"></span> tns.</label>
+					<label><strong>Peso de todas las <span id="resultado-rielesbarras"></span> barras: </strong><span class="calculo" hidden id="calculo-rielespeso"></span><span id="resultado-rielespeso"></span> tns.</label>
 					<hr>
-					<label><strong>Cantidad total de tirafondos: </strong><span class="calculo hidden" id="calculo-tirafondos"></span><span id="resultado-tirafondos"></span> unidades.</label>
+					<label><strong>Cantidad total de tirafondos: </strong><span class="calculo" hidden id="calculo-tirafondos"></span><span id="resultado-tirafondos"></span> unidades.</label>
 					<hr>
-					<label><strong>Cantidad total de eclisas: </strong><span class="calculo hidden" id="calculo-eclisas"></span><span id="resultado-eclisas"></span> unidades.</label>
+					<label><strong>Cantidad total de eclisas: </strong><span class="calculo" hidden id="calculo-eclisas"></span><span id="resultado-eclisas"></span> unidades.</label>
 					<hr>
-					<label><strong>Cantidad total de bulones y arandelas de eclisas: </strong><span class="calculo hidden" id="calculo-arandelasbulones"></span><span id="resultado-arandelasbulones"></span> unidades cada una.</label>
+					<label><strong>Cantidad total de bulones y arandelas de eclisas: </strong><span class="calculo" hidden id="calculo-arandelasbulones"></span><span id="resultado-arandelasbulones"></span> unidades cada una.</label>
 				</div>
 			</form>
 		</main>
